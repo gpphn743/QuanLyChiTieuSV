@@ -1,0 +1,45 @@
+﻿<Window x:Class="QuanLyChiTieuSV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ứng dụng Quản lý chi tiêu cho sinh viên" Height="500" Width="662">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock Text="Mục Chi tiêu" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Ghi chú:" Width="80"/>
+                <TextBox x:Name="txtExpenseDescription" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Số tiền:" Width="80"/>
+                <TextBox x:Name="txtExpenseAmount" Width="100"/>
+            </StackPanel>
+            <Button Content="Thêm" Click="btnAddExpense_Click" Width="100"/>
+            <TextBlock Text="Danh sách Chi tiêu" FontWeight="Bold" FontSize="16" Margin="0,20,0,10"/>
+            <ListBox x:Name="lstExpenses" Width="300" Height="150"/>
+            <Button Content="Xóa mục" Click="btnDeleteExpense_Click" Width="100" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10,10,10,10">
+            <TextBlock Text="Mục Thu nhập" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Ghi chú:" Width="80"/>
+                <TextBox x:Name="txtIncomeSource" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Số tiền:" Width="80"/>
+                <TextBox x:Name="txtIncomeAmount" Width="100"/>
+            </StackPanel>
+            <Button Content="Thêm" Click="btnAddIncome_Click" Width="100"/>
+            <TextBlock Text="Danh sách Thu nhập" FontWeight="Bold" FontSize="16" Margin="0,20,0,10"/>
+            <ListBox x:Name="lstIncomes" Width="300" Height="150"/>
+            <Button Content="Xóa mục" Click="btnDeleteIncome_Click" Width="100" Margin="0,10,0,0"/>
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1"/>
+        <!--<Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"/>-->
+    </Grid>
+</Window>

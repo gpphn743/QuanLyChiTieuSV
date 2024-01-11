@@ -1,0 +1,18 @@
+﻿<Window x:Class="QuanLyChiTieuSV.HomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyChiTieuSV"
+        mc:Ignorable="d"
+        Title="HomeWindow" Height="350" Width="631">
+    <Grid>
+        <StackPanel Margin="10" Background="White">
+            <TextBlock Text="Ứng dụng Quản lý chi tiêu" FontWeight="Bold" FontSize="20" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+            <Button Content="Danh mục Thu/Chi" Click="btnIncomeAndExpense_Click" Width="200" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Tạo báo cáo" Click="btnGenerateReports_Click" Width="200" Height="40" Margin="0,0,0,10"/>
+            <Button Content="Tài khoản" Click="btnAccount_Click" Width="200" Height="40" Margin="0,0,0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>
